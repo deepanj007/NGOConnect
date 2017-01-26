@@ -1,0 +1,135 @@
+﻿
+<!-- Include Required Prerequisites -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/moment.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+
+<script type="text/javascript" src="js/daterangepicker.js"></script>
+<link href="css/daterangepicker.css" rel="stylesheet" />
+
+
+<form class="form-horizontal container" role="form">
+    <div class="page-header">
+        <h2>Initiate An Event</h2>
+    </div>
+    <fieldset>        
+        <div class="form-group">
+            <label for="EventName" class="col-sm-3 control-label">Event Name</label>
+            <div class="col-sm-6">
+                <input type="text" id="EventName" name="EventName" class="form-control" placeholder="Event Name" />
+            </div>
+        </div>
+ 
+        <div class="form-group">            
+            <label for="DateAndTime" class="col-sm-3 control-label">Date & Time</label>
+            <div class="col-sm-6">
+                <input type="text" id="DateAndTime" name="DateAndTime" class="form-control" placeholder="Date & Time" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Objective" class="col-sm-3 control-label">Objective</label>
+            <div class="col-sm-6">
+                <input type="text" id="Objective" name="Objective" class="form-control" placeholder="Objective" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Location" class="col-sm-3 control-label">Location</label>
+            <div class="col-sm-6">
+                <input type="text" id="Location" name="Location" class="form-control" placeholder="Location" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="State" class="col-sm-3 control-label">State</label>
+            <div class="col-sm-6">
+                <select name="State" id="State" class="form-control">
+                   <option>AndhraPradesh</option>
+                  </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="City" class="col-sm-3 control-label">City</label>
+            <div class="col-sm-6">
+                <select name="City" id="City" class="form-control">
+                   <option>Hyderabad</option>
+                   </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="PinCode" class="col-sm-3 control-label">PinCode</label>
+            <div class="col-sm-6">
+                <input type="text" id="PinCode" name="PinCode" class="form-control" placeholder="PinCode" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Oragnization" class="col-sm-3 control-label">Oragnization(if Any)</label>
+            <div class="col-sm-6">
+                <input type="text" id="Oragnization" name="Oragnization" class="form-control" placeholder="Oragnization" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="NGO " class="col-sm-3 control-label">NGO (if Any)</label>
+            <div class="col-sm-6">
+                <input type="text" id="NGO" name="NGO" class="form-control" placeholder="NGO Name" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Details" class="col-sm-3 control-label">Details</label>
+            <div class="col-sm-6">
+                <textarea name="Details" id="Details" class="form-control" rows="2" cols="20" placeholder="full descirption"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="NeedHelp" class="col-sm-3 control-label">Need Help</label>
+            <div class="col-sm-6">
+                <textarea name="NeedHelp" id="NeedHelp" class="form-control" rows="2" cols="20" placeholder="please specify if you need any help from us"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="NeedHelp" class="col-sm-3 control-label">Image Upload</label>
+            <div class="col-sm-6">
+                <p> Image upload</p>
+            </div>
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            $(function () {
+                $('input[name="DateAndTime"]').daterangepicker({
+                    "singleDatePicker": true,
+                    "showDropdowns": true,
+                    "timePicker": true
+                });;
+            });
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</fieldset>
+    <br />
+    <input type="submit" class="btn btn-primary col-sm-offset-3" value="Submit" />
+
+
+
+
+
+
+   
+</form>
