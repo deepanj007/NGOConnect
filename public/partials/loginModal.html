@@ -1,0 +1,37 @@
+<div ng-controller="headerController">
+    <form class="form-horizontal container" role="form">
+        <!--<div class="page-header col-lg-6">-->
+            <h2>Please Sign In</h2>
+        <!--</div>-->
+    <!--<fieldset>-->
+    <div class="form-group ">
+        <label for="Email" class="col-lg-2 control-label ">Email</label>
+        <div class="col-lg-4">
+            <input type="email" id="Email" name="Email" ng-model="uname" class="form-control" placeholder="Email"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="Password" class="col-lg-2 control-label">Password</label>
+        <div class="col-lg-4">
+            <input type="password" id="Password" name="Password" ng-model="pass" class="form-control" placeholder="Password"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="RememberMeCheckBox" class="col-lg-2 control-label">Remember me</label>
+        <div class="checkbox col-sm-7">
+            <input id="RememberMeCheckBox" type="checkbox" value="remember-me">
+        </div>
+    </div>
+        <div ng-show="wrongCredential" class="alert alert-danger col-lg-6">
+          <strong>Wrong Credential!</strong> Indicates a successful or positive action.
+        </div>
+
+<!--
+    </fieldset>-->
+    <div class="page-footer col-lg-8">
+    <input type="button" class="btn btn-primary col-sm-offset-3" ng-click="signin(uname,pass)" value="Sign In" />
+    </div>
+    </form>
+    <br>
+</div>      

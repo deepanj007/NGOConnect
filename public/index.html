@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NGOConnect</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+          <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 50%;
+      margin: auto;
+  }
+  </style>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--libraries-->
+        <script src="lib/jquery.js"></script>
+        <script src="lib/bootstrap.min.js"></script>
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-ui-router.js"></script>
+        <script src="lib/angular-bootstrap.js"></script>
+        <script src="lib/ngStorage.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        <!--scripts-->
+        <script src="module/module.js"></script>
+        <script src="controllers/basePageController.js"></script>
+        <script src="controllers/headerController.js"></script>
+        <script src="controllers/loginController.js"></script>
+        <script src="services/loginService.js"></script>
+        <script src="services/signupService.js"></script>
+    </head>
+    
+    <body ng-app="ngoConnect">
+        <!--Header-->
+        <!--<div ng-include="'partials/header.tpl.html'" class="container-fluid"></div>-->
+        <div ui-view="header" class="container-fluid"></div>
+        <!--Side bar-->
+        <div class="row container-fluid ">
+        <div ng-include="'partials/sideBar.tpl.html'" class="col-lg-3"></div>
+        <!--multiple views-->
+        <div ui-view="main" class="col-lg-9 container"></div>
+        </div>
+    </body>
+</html>

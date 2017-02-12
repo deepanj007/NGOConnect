@@ -1,0 +1,21 @@
+
+{
+  "name": "ngo_connect",
+  "version": "1.0.0",
+  "description": "Connecting NGO and volenteers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+      "morgan":"*",
+      "body-parser":"*",
+      "method-override":"*",
+      "request":"*",
+      "neo4j-driver":"*"
+  },
+  "author": "Deepanjan Ghosh",
+  "license": "ISC"
+}
